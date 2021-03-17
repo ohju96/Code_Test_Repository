@@ -7,7 +7,7 @@ public class Ex03_12 {
 		
 		a = 'A';
 		System.out.printf("%c \t", a);
-		System.out.printf("%c \n", (int)a);
+		System.out.printf("%d \n", (int)a);
 		
 		b = 'a' ;
 		c = (char) (b+1);
