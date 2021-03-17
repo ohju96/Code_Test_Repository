@@ -19,7 +19,7 @@ public class Ex03_12 {
 	
 		d = '°¡';
 		e = (char) (d +1);
-		System.out.printf("%c \t", (int)d);
+		System.out.printf("%d \t", (int)d);
 		System.out.printf("%c \n", e);
 	}
 
