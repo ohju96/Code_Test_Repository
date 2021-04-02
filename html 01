@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>iframe 활용</h1>
+    <table>
+        <tr>
+            <td><a href="ohjuhyeon.html" target="movie"><img src="img/www.png" alt=""></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><iframe src="ohjuhyeon.html" name="movie" width="700px" height="500px" frameborder="0"></iframe></td>
+        </tr>
+    </table>
+</body>
+</html>
