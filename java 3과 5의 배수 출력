@@ -1,0 +1,12 @@
+
+public class dd {
+
+	public static void main(String[] args) {
+
+		for (int i=1; i<=100; i++) {
+			if(i%15==0) {
+				System.out.println("[3과 5의 배수]" + i);
+			}
+		}
+	}
+}
