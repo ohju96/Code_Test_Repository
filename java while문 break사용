@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ch05 {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		int a = 0;
+		int b = 0;
+		
+		while(true) {
+			System.out.println("첫 번째 입력 값 : ");
+			a = sc.nextInt();
+			
+			System.out.println("두 번째 입력 값 : ");
+			b = sc.nextInt();
+			
+			System.out.println("합계 : " + (a + b));
+			
+			if((a+b)>10) {
+				break;
+			}
+		}
+	}
+}
