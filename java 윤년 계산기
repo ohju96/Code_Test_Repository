@@ -1,0 +1,22 @@
+package ch1;
+
+public class ch03 {
+
+	public static void main(String[] args) {
+
+		int a = 2000;
+
+		if (a % 4 == 0) {
+
+			if (a % 100 != 0 || a % 400 == 0) {
+				System.out.println("윤년입니다.");
+			} else {
+				System.out.println("윤년이아니다.");
+			}
+
+		} else {
+			System.out.println("윤년이아니다.");
+		}
+	}
+
+}
