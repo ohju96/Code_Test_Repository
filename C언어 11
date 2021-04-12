@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+
+	int a = 90;
+
+
+	if (a < 100) 
+	{
+		printf("100보다 작군요..\n");
+		printf("거짓이므로 앞에 문장은 안보이겠죠? \n");
+	}
+
+	printf("프로그램 끝! \n");
+
+
+	return 0;
+}
