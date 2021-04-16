@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+   <center>
+   <!--테이블 만들기-->
+    <table border="1" width="750px">
+      <center>
+       <!--행 만들기-->
+       <tr> 
+           <!--제목-->
+           <td colspan="3"><h1><center>사진 앨범</center></h1></td>
+       </tr>
+       
+        <tr>
+            <!--각자 사진 및 사이즈 조정-->
+            <td><a href="img/ojh.jpg" target ="main"><img src="img/ojh.jpg" width="350" height="450"></a></td>
+            
+            <td><a href="img/jgw.jpg" target ="main"><img src="img/jgw.jpg" width="350" height="450"></a></td>
+            
+            <td><a href="img/smh.jpg" target ="main"><img src="img/smh.jpg" width="350" height="450"></a></td>
+        </tr>
+        
+        <tr>
+            <!--열 합치기 및 blank.html 기본 화면 표시, 사이즈 조정, main이름 설정-->
+            <td colspan="3"><iframe src="blank.html" width="350px" height="450px" name="main"></iframe></td>
+            
+        </tr>
+        </center>
+    </table>
+    </center>
+</body>
+</html>
