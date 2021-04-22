@@ -1,0 +1,29 @@
+package ch02;
+
+import java.util.Scanner;
+
+public class ch02_04 {
+// 
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int hap;
+		System.out.print("첫번째");
+		int a = sc.nextInt();
+		
+		System.out.print("두번째");
+		int b = sc.nextInt();
+		
+		System.out.print("세번째");
+		int c = sc.nextInt();
+		
+		System.out.print("네번째");
+		int d = sc.nextInt();
+		
+		hap = a+b+c+d;
+		
+		System.out.println(a + "+" + b + "+" + c + "+" + d + "=" + hap);
+		
+		
+	}
+}
