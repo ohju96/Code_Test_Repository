@@ -1,0 +1,25 @@
+package ch01;
+
+public class ch03 {
+
+	public static void main(String[] args) {
+
+		int a = 5;
+		int b = 3;
+		int hap = 0;
+
+		if (a < b) {
+			for (int i = a; i <= b; i++) {
+				hap += i;
+			}
+			System.out.println(hap);
+		} else {
+			for (int i = b; i <= a; i++) {
+				hap += i;
+			}
+			System.out.println(hap);
+		}
+
+	}
+
+}
