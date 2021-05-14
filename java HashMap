@@ -1,0 +1,25 @@
+package ch01;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ch14 {
+
+	public static void main(String[] args) {
+
+		Map<String, String> pMap = new HashMap<>();
+
+		pMap.put("name", "오주현");
+		pMap.put("email", "ohju96@naver.com");
+		pMap.put("dept", "코딩과");
+		
+		System.out.println("------------------------");
+		System.out.println(pMap.get("name"));
+		System.out.println(pMap.get("email"));
+		System.out.println(pMap.get("dept"));
+		System.out.println(pMap.get("오타"));
+		System.out.println("------------------------");
+		
+	}
+
+}
