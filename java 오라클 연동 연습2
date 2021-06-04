@@ -1,0 +1,28 @@
+package poly.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import poly.dto.DummyDTO;
+
+
+@Controller
+public class MainController {
+	
+	private Logger log = Logger.getLogger(this.getClass());
+	
+	@RequestMapping(value="login")
+	public String Index(HttpServletRequest request) {
+		DummyDTO uDTO = new DummyDTO();
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		log.info(id);
+		log.info(password);
+		log.info("로그인 페이지 출력");
+		return "/login";
+	}
+			
+}
