@@ -1,0 +1,38 @@
+package poly.service.impl;
+
+import javax.annotation.Resource;
+
+import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
+
+import poly.dto.UserDTO;
+import poly.persistance.mapper.IUserMapper;
+import poly.service.IUserService;
+
+@Service("UserService")
+public class UserService implements IUserService{
+	private Logger log = Logger.getLogger(this.getClass());
+	@Resource(name="UserMapper")
+	private IUserMapper UserMapper;
+
+	@Override
+	public int insertinfo(UserDTO uDTO) throws Exception {
+		int res = 0; 
+		
+		
+		UserDTO rDTO = new UserDTO();
+		rDTO = UserMapper.checkEmail(uDTO); //uDTO 값을 checkEmail함수로 Usermapper로 보낸다.
+		if(rDTO == null) {
+			log.info("회원가입 시작");
+			UserMapper.checkEmail(uDTO);
+			res = 1;
+			log.info("회원가입 완료");
+		}else {
+			log.info("가입된 이메일");
+		}
+		
+		
+		return res;
+	}
+
+}
