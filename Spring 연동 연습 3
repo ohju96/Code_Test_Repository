@@ -1,0 +1,15 @@
+package poly.service;
+
+import poly.dto.BoardDTO;
+import poly.dto.UserDTO;
+
+public interface IUserService {
+
+	int insertinfo(UserDTO uDTO)  throws Exception;
+
+	int checklogin(UserDTO lDTO) throws Exception;
+
+	int boards(BoardDTO bDTO) throws Exception;
+
+	
+}
